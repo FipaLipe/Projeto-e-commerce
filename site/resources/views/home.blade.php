@@ -16,9 +16,7 @@
 	<meta charset="UTF-8">
 	<!-- Site Title -->
 	<title>PoliShoes</title>
-	<!--
-		CSS
-		============================================= -->
+	<!-- CSS -->
 	<link rel="stylesheet" href="css/linearicons.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/themify-icons.css">
@@ -114,8 +112,7 @@
 							<div class="col-lg-5 col-md-6">
 								<div class="banner-content">
 									<h1>Coleção nova<br>da NIKE!</h1>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-										dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
 									<div class="add-bag d-flex align-items-center">
 										<a class="add-btn" href=""><span class="lnr lnr-cross"></span></a>
 										<span class="add-text text-uppercase">Adicionar ao carrinho</span>
@@ -133,8 +130,7 @@
 							<div class="col-lg-5">
 								<div class="banner-content">
 									<h1>Essa é outra <br>Coleção!</h1>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-										dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
 									<div class="add-bag d-flex align-items-center">
 										<a class="add-btn" href=""><span class="lnr lnr-cross"></span></a>
 										<span class="add-text text-uppercase">Adicionar ao carrinho</span>
@@ -281,9 +277,7 @@
 						<div class="section-title">
 							<h1>Latest Products</h1>
                             <a href="#">Veja todos os produtos</a>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-								dolore
-								magna aliqua.</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 						</div>
 					</div>
 				</div>
@@ -1106,7 +1100,7 @@
 
 									 <div class="col-lg-4 col-md-4">
 												<button class="bb-btn btn"><span class="lnr lnr-arrow-right"></span></button>
-											</div>  
+											</div>
 								</div>
 								<div class="info"></div>
 							</form>
