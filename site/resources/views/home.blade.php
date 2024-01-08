@@ -15,7 +15,7 @@
 	<!-- meta character set -->
 	<meta charset="UTF-8">
 	<!-- Site Title -->
-	<title>PoliShoes</title>
+	<title>sla</title>
 	<!--
 		CSS
 		============================================= -->
