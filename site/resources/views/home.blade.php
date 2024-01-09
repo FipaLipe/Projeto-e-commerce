@@ -85,9 +85,18 @@
 							</li>
 						</ul>
 						<ul class="nav navbar-nav navbar-right">
-							<li class="nav-item"> <a href="#" class="genric-btn primary circle"> Cadastrar-se </a> </li>
-							<li class="nav-item"> <a href="#" class="genric-btn primary-border circle"> Fazer login </a> </li>
+							<li class="nav-item"> <a href="#" class="genric-btn primary circle medium"> Cadastrar-se </a> </li>
+							<li class="nav-item"> <a href="#" class="genric-btn primary-border circle medium"> Fazer login </a> </li>							
 						</ul>
+						<li class="nav-item submenu dropdown">
+							<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"
+									aria-haspopup="true" aria-expanded="false"><span class="ti-user"></span></a>
+							<ul class="dropdown-menu">
+								<li class="nav-item"><a class="nav-link" href="#">Ver perfil</a></li>
+								<li class="nav-item"><a class="nav-link" href="#">Pedidos</a></li>
+								<li class="nav-item"><a class="nav-link" href="#">Log Out</a></li>
+							</ul>
+						</li>
 					</div>
 				</div>
 			</nav>
