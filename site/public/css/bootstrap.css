@@ -3185,7 +3185,7 @@ input[type=submit].btn-block {
 .dropdown-menu {
     position: absolute;
     top: 100%;
-    left: 0;
+    left: 0px;
     z-index: 1000;
     display: none;
     float: left;
@@ -3265,7 +3265,8 @@ input[type=submit].btn-block {
     right: 100%;
     left: auto;
     margin-top: 0;
-    margin-right: .125rem
+    margin-right: .125rem;
+    background-color: red;
 }
 
 .dropleft .dropdown-toggle::after {
@@ -4231,7 +4232,18 @@ input[type=submit].btn-block {
 
 .navbar-nav .dropdown-menu {
     position: static;
-    float: none
+    float: none;
+}
+
+.navbar-nav .user .dropdown-menu {
+    position: absolute !important;
+    right: -1rem !important;
+    left: auto !important;
+    float: none !important;
+}
+
+.navbar-nav .user .dropdown-menu .nav-item a{
+    text-align: right !important;
 }
 
 .navbar-text {

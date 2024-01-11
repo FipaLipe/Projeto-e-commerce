@@ -89,18 +89,18 @@
 							<li class="nav-item"> <a href="#" class="genric-btn primary-border circle medium"> Fazer login </a> </li>
 						</ul> -->
 						<ul class="nav navbar-nav menu_nav ml-4">
-							<li class="nav-item submenu dropdown">
+							<li class="nav-item submenu dropdown user">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
 									Entrar
 									<span class="ti-user ml-1"></span>
 								</a>
-								<ul class="dropdown-menu">
+								<ul class="dropdown-menu dropdown-menu-right">
 									<li class="nav-item"><a class="nav-link" href="login">Login</a></li>
 									<li class="nav-item"><a class="nav-link" href="#">Ver perfil</a></li>
 									<li class="nav-item"><a class="nav-link" href="#">Pedidos</a></li>
 									<li class="nav-item"><a class="nav-link" href="#">Log Out</a></li>
-								</ul>
-							</li>							
+								</ul>	
+							</li>			
 						</ul>
 						
 					</div>
