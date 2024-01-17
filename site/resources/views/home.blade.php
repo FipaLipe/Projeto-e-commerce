@@ -56,7 +56,7 @@
 	</section>
 	<!-- End banner Area -->
 
-	<!-- start features Area -->
+	<!-- start services Area -->
 	<section class="features-area section_gap">
 		<div class="container">
 			<div class="row features-inner">
@@ -103,7 +103,7 @@
 			</div>
 		</div>
 	</section>
-	<!-- end features Area -->
+	<!-- end services Area -->
 
 	<!-- Start category Area -->
 	<!-- <section class="category-area">
