@@ -57,14 +57,23 @@
                     <ul class="nav navbar-nav menu_nav ml-4">
                         <li class="nav-item submenu dropdown user">
                             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                                Entrar
+                                @guest
+                                    Entrar
+                                @endguest
+                                @auth
+                                    Name
+                                @endauth
                                 <span class="ti-user ml-1"></span>
                             </a>
                             <ul class="dropdown-menu dropdown-menu-right">
+                                @guest
                                 <li class="nav-item"><a class="nav-link" href="login">Login</a></li>
+                                @endguest
+                                @auth
                                 <li class="nav-item"><a class="nav-link" href="#">Ver perfil</a></li>
                                 <li class="nav-item"><a class="nav-link" href="#">Pedidos</a></li>
                                 <li class="nav-item"><a class="nav-link" href="#">Log Out</a></li>
+                                @endauth
                             </ul>
                         </li>
                     </ul>
