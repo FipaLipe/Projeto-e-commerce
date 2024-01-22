@@ -13,7 +13,7 @@ class UserController extends Controller
     public function index()
     {
         $services = Service::all();
-        return view('home', ['services', $services]);
+        return view('home', ['services'=>$services]);
     }
 
     /**
