@@ -15,6 +15,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [UserController::class, 'index']);
+Route::post('/', [UserController::class, 'index']);
+Route::post('/create-account', [UserController::class, 'create']);
 
 Route::get('/produto', function () {
     return view('produto');
@@ -26,4 +28,8 @@ Route::get('/produtos', function () {
 
 Route::get('/login', function () {
     return view('login');
+});
+
+Route::get('/create-account', function () {
+    return view('create-account');
 });
