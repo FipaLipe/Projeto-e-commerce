@@ -154,39 +154,32 @@
 				<div class="row justify-content-center">
 					<div class="col-lg-6 text-center">
 						<div class="section-title">
-							<h1>Latest Products</h1>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+							<h1>Produtos Recentes</h1>
+							<p>Todos os últimos lançamentos aqui!</p>
 							<a href="produtos">Veja todos os produtos</a>
 						</div>
 					</div>
 				</div>
 				<div class="row">
 					<!-- single product -->
-					<div class="col-lg-3 col-md-6">
-						<div class="single-product">
-							<a href="produto"><img class="img-fluid" src="img/product/p1.jpg" alt=""></a>
-							<div class="product-details">
-								<h6>addidas New Hammer sole
-									for Sports person</h6>
-								<div class="price">
-									<h6>$150.00</h6>
-									<h6 class="l-through">$210.00</h6>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-3 col-md-6">
-						<div class="single-product">
-							<a href="produto"><img class="img-fluid" src="img/product/p6.jpg" alt=""></a>
-							<div class="product-details">
-								<h6>Tênis bonito</h6>
-								<div class="price">
-									<h6>$20.00</h6>
-									<h6 class="l-through">$110.00</h6>
-								</div>
-							</div>
-						</div>
-					</div>
+                    @if (isset($products))
+                        @foreach($products as $product)
+                            <div class="col-lg-3 col-md-6">
+                                <div class="single-product">
+                                    <a href="produto"><img class="img-fluid" src={{$product->image}} alt=""></a>
+                                    <div class="product-details">
+                                        <h6>{{$product->name}}</h6>
+                                        <div class="price">
+                                            <h6>${{$product->price}}</h6>
+                                            <h6 class="l-through">$210.00</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        @endforeach
+                    @else
+                        <h2 style="color: red; font-size: 20px; width: 100%; text-align: center">Não há nenhum produto disponivel</h2>
+                    @endif
 				</div>
 			</div>
 		</div>
@@ -204,33 +197,27 @@
 				</div>
 				<div class="row">
 					<!-- single product -->
-					<div class="col-lg-3 col-md-6">
-						<div class="single-product">
-							<a href="produto"><img class="img-fluid" src="img/product/p7.jpg" alt=""></a>
-							<div class="product-details">
-								<h6>olympus sla</h6>
-								<div class="price">
-									<h6>$120.00</h6>
-									<h6 class="l-through">$350.00</h6>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-3 col-md-6">
-						<div class="single-product">
-							<a href="produto"><img class="img-fluid" src="img/product/p5.jpg" alt=""></a>
-							<div class="product-details">
-								<h6>Naiki di ouro</h6>
-								<div class="price">
-									<h6>$1200.00</h6>
-									<h6 class="l-through">$1800.00</h6>
-								</div>
-							</div>
-						</div>
-					</div>
-					</div>
-				</div>
-			</div>
+                    @if (isset($products))
+                        @foreach($products as $product)
+                            <div class="col-lg-3 col-md-6">
+                                <div class="single-product">
+                                    <a href="produto"><img class="img-fluid" src={{$product->image}} alt=""></a>
+                                    <div class="product-details">
+                                        <h6>{{$product->name}}</h6>
+                                        <div class="price">
+                                            <h6>${{$product->price}}</h6>
+                                            <h6 class="l-through">$210.00</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        @endforeach
+                    @else
+                        <h2 style="color: red; font-size: 20px; width: 100%; text-align: center">Não há nenhum produto disponivel</h2>
+                    @endif
+                </div>
+            </div>
+        </div>
 	</section>
 	<!-- end product Area -->
 
@@ -307,27 +294,19 @@
 	<!-- End exclusive deal Area -->
 
 	<!-- Start brand Area -->
+    @if (isset($brands))
 	<section class="brand-area section_gap">
 		<div class="container">
 			<div class="row">
-				<a class="col single-img" href="#">
-					<img class="img-fluid d-block mx-auto" src="img/brand/1.png" alt="">
-				</a>
-				<a class="col single-img" href="#">
-					<img class="img-fluid d-block mx-auto" src="img/brand/2.png" alt="">
-				</a>
-				<a class="col single-img" href="#">
-					<img class="img-fluid d-block mx-auto" src="img/brand/3.png" alt="">
-				</a>
-				<a class="col single-img" href="#">
-					<img class="img-fluid d-block mx-auto" src="img/brand/4.png" alt="">
-				</a>
-				<a class="col single-img" href="#">
-					<img class="img-fluid d-block mx-auto" src="img/brand/5.png" alt="">
-				</a>
+                @foreach($brands as $brand)
+                    <a class="col single-img" href={{$brand->link}}>
+                        <img class="img-fluid d-block mx-auto" src={{$brand->image}} alt={{$brand->name}}>
+                    </a>
+                @endforeach
 			</div>
 		</div>
 	</section>
+    @endif
 	<!-- End brand Area -->
 
 	<!-- Start related-product Area -->

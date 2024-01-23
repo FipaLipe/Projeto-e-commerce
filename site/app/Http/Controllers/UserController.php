@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Brand;
+use App\Models\Product;
 use App\Models\Service;
 use Illuminate\Http\Request;
 
@@ -13,7 +15,9 @@ class UserController extends Controller
     public function index()
     {
         $services = Service::all();
-        return view('home', ['services'=>$services]);
+        $products = Product::all();
+        $brands = Brand::all();
+        return view('home', ['services'=>$services, 'products'=>$products, 'brands'=>$brands]);
     }
 
     /**

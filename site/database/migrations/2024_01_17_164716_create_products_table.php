@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('category');
             $table->integer('quantity');
             $table->longText('description');
-            $table->longText('image');
+            $table->string('image');
             $table->string('brand');
             $table->string('color');
             $table->timestamps();
